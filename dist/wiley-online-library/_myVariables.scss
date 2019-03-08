@@ -1,0 +1,44 @@
+$gray-200: #EFEFF0;
+$gray-300: #D8D9DA;
+$gray-400: #C2C3C6;
+$gray-500: #767676;
+$gray-600: #414246;
+$gray-700: #2f3032;
+$gray-800: #1C1D1E;
+$gray-900: #141414;
+
+$blue:    #005274;
+$indigo:  #61165E;
+$purple:  #440F42;
+$pink:    #D115C9;
+$red:     #A41022;
+$orange:  #CC4E00;
+$yellow:  #B27A03;
+$green:   #068853;
+$teal:    #00E788;
+$cyan:    #006D76;
+
+$warning: $orange;
+
+$theme-colors: (
+  "twitter":    #1da1f2,
+  "orcid":      #a6ce39,
+  "bva-blue":   #004b65,
+  "bva-teal":   #1AA3AA
+);
+
+$yiq-text-dark: $gray-800;
+$enable-rounded: false;
+$body-color: $gray-800;
+$font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-weight: 600;
+$text-muted: $gray-500;
+$blockquote-small-color: $gray-500;
+$btn-font-weight: 600;
+$btn-link-disabled-color: $gray-500;
+$custom-control-label-disabled-color: $gray-500;
+$custom-select-disabled-color: $gray-500;
+$dropdown-divider-bg: $gray-300;
+$dropdown-link-hover-bg: $gray-200;
+$dropdown-link-disabled-color: $gray-500;
+$popover-max-width: 400px;

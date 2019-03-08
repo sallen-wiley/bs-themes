@@ -1,0 +1,79 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-top {
+		border-top-width: $border-width !important;
+		border-top-style: solid !important;
+		border-top-color: $border-color;
+	}
+    .border#{$infix}-right {
+		border-right-width: $border-width !important;
+		border-right-style: solid !important;
+		border-right-color: $border-color;
+	}
+    .border#{$infix}-bottom {
+		border-bottom-width: $border-width !important;
+		border-bottom-style: solid !important;
+		border-bottom-color: $border-color;
+	}
+    .border#{$infix}-left {
+		border-left-width: $border-width !important;
+		border-left-style: solid !important;
+		border-left-color: $border-color;
+	}
+
+    .border#{$infix}-top-0 {    border-top: 0 !important; }
+    .border#{$infix}-right-0 {  border-right: 0 !important; }
+    .border#{$infix}-bottom-0 { border-bottom: 0 !important; }
+    .border#{$infix}-left-0 {   border-left: 0 !important; }
+
+    .border#{$infix}-x {
+		border-left-width: $border-width !important;
+		border-left-style: solid !important;
+		border-left-color: $border-color;
+		border-right-width: $border-width !important;
+		border-right-style: solid !important;
+		border-right-color: $border-color;
+    }
+
+    .border#{$infix}-y {
+		border-top-width: $border-width !important;
+		border-top-style: solid !important;
+		border-top-color: $border-color;
+		border-bottom-width: $border-width !important;
+		border-bottom-style: solid !important;
+		border-bottom-color: $border-color;
+    }
+  }
+}
+
+.bg-black-25 { background-color: rgba($black, .25) !important; }
+.bg-black-50 { background-color: rgba($black, .5) !important; }
+.bg-black-75 { background-color: rgba($black, .75) !important; }
+
+.bg-white-25 { background-color: rgba($white, .25) !important; }
+.bg-white-50 { background-color: rgba($white, .5) !important; }
+.bg-white-75 { background-color: rgba($white, .75) !important; }
+
+.border-black-25 { border-color: rgba($black, .25) !important; }
+.border-black-50 { border-color: rgba($black, .5) !important; }
+.border-black-75 { border-color: rgba($black, .75) !important; }
+
+.border-white-25 { border-color: rgba($white, .25) !important; }
+.border-white-50 { border-color: rgba($white, .5) !important; }
+.border-white-75 { border-color: rgba($white, .75) !important; }
+
+a {
+  font-weight: 600;
+}
+p a:not(.btn) {
+  text-decoration: underline;
+}
+.btn-link {
+  font-weight: 600;
+}
+.serif {
+  font-weight: 400;
+  font-family: 'Source Serif Pro';
+}
