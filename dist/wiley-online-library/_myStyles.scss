@@ -48,21 +48,29 @@
   }
 }
 
+.bg-black-10 { background-color: rgba($black, .1) !important; }
 .bg-black-25 { background-color: rgba($black, .25) !important; }
 .bg-black-50 { background-color: rgba($black, .5) !important; }
 .bg-black-75 { background-color: rgba($black, .75) !important; }
+.bg-black-90 { background-color: rgba($black, .9) !important; }
 
+.bg-white-10 { background-color: rgba($white, .1) !important; }
 .bg-white-25 { background-color: rgba($white, .25) !important; }
 .bg-white-50 { background-color: rgba($white, .5) !important; }
 .bg-white-75 { background-color: rgba($white, .75) !important; }
+.bg-white-90 { background-color: rgba($white, .9) !important; }
 
+.border-black-10 { border-color: rgba($black, .1) !important; }
 .border-black-25 { border-color: rgba($black, .25) !important; }
 .border-black-50 { border-color: rgba($black, .5) !important; }
 .border-black-75 { border-color: rgba($black, .75) !important; }
+.border-black-90 { border-color: rgba($black, .9) !important; }
 
+.border-white-10 { border-color: rgba($white, .1) !important; }
 .border-white-25 { border-color: rgba($white, .25) !important; }
 .border-white-50 { border-color: rgba($white, .5) !important; }
 .border-white-75 { border-color: rgba($white, .75) !important; }
+.border-white-90 { border-color: rgba($white, .9) !important; }
 
 a {
   font-weight: 600;
