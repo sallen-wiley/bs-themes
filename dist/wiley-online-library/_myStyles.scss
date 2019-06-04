@@ -72,6 +72,9 @@
 .border-white-75 { border-color: rgba($white, .75) !important; }
 .border-white-90 { border-color: rgba($white, .9) !important; }
 
+.bg-gradient-dark { background: $primary; background: linear-gradient(45deg, $primary 0, $green 100%); }
+.bg-gradient-light { background: $gray-200; background: linear-gradient(45deg, $gray-200 0, $gray-100 100%); }
+
 a {
   font-weight: 600;
 }

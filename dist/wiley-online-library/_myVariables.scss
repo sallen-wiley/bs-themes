@@ -21,6 +21,8 @@ $cyan:    #006D76;
 $warning: $orange;
 
 $theme-colors: (
+  "access-open": $indigo,
+  "access-free": $yellow,
   "twitter":    #1da1f2,
   "orcid":      #a6ce39,
   "bva-blue":   #004b65,
@@ -31,7 +33,9 @@ $theme-colors: (
   "bjs-blue": #364ecf,
   "asco-teal": #155f83,
   "asco-light-blue": #0076a9,
-  "asco-dark-blue": #00447c
+  "asco-dark-blue": #00447c,
+  "dom-light-red": #d3033d,
+  "dom-dark-red": #290403
 );
 
 $yiq-text-dark: $gray-800;
