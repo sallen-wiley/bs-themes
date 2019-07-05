@@ -72,8 +72,9 @@
 .border-white-75 { border-color: rgba($white, .75) !important; }
 .border-white-90 { border-color: rgba($white, .9) !important; }
 
-.bg-gradient-dark { background: $primary; background: linear-gradient(45deg, $primary 0, $green 100%); }
-.bg-gradient-light { background: $gray-200; background: linear-gradient(45deg, $gray-200 0, $gray-100 100%); }
+.bg-gradient-dark { background: $dark; background: linear-gradient(45deg, darken($dark, 10%) 0, lighten($dark, 10%) 100%); }
+.bg-gradient-light { background: $light; background: linear-gradient(45deg, darken($light, 10%) 0, lighten($light, 10%) 100%); }
+.bg-gradient-primary { background: $primary; background: linear-gradient(45deg, darken($primary, 10%) 0, lighten($primary, 10%) 100%); }
 
 a {
   font-weight: 600;
@@ -87,6 +88,9 @@ p a:not(.btn) {
 .serif {
   font-weight: 400;
   font-family: 'Source Serif Pro';
+}
+.slab {
+  font-family: 'Roboto Slab';
 }
 .momentum-scrolling {
   -webkit-overflow-scrolling: touch;
