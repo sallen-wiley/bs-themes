@@ -48,6 +48,22 @@
   }
 }
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .counter-gutter#{$infix} {
+      margin-left: ($grid-gutter-width * -0.5);
+      margin-right: ($grid-gutter-width * -0.5);
+    }
+    .counter-gutter#{$infix}-left {
+      margin-left: ($grid-gutter-width * -0.5);
+    }
+    .counter-gutter#{$infix}-right {
+      margin-right: ($grid-gutter-width * -0.5);
+    }
+  }
+}
+
 .bg-black-10 { background-color: rgba($black, .1) !important; }
 .bg-black-25 { background-color: rgba($black, .25) !important; }
 .bg-black-50 { background-color: rgba($black, .5) !important; }
