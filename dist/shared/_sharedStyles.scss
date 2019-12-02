@@ -1,0 +1,253 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-top {
+      border-top-width: $border-width !important;
+      border-top-style: solid !important;
+      border-top-color: $border-color;
+    }
+
+    .border#{$infix}-right {
+      border-right-width: $border-width !important;
+      border-right-style: solid !important;
+      border-right-color: $border-color;
+    }
+
+    .border#{$infix}-bottom {
+      border-bottom-width: $border-width !important;
+      border-bottom-style: solid !important;
+      border-bottom-color: $border-color;
+    }
+
+    .border#{$infix}-left {
+      border-left-width: $border-width !important;
+      border-left-style: solid !important;
+      border-left-color: $border-color;
+    }
+
+    .border#{$infix}-top-0 {
+      border-top: 0 !important;
+    }
+
+    .border#{$infix}-right-0 {
+      border-right: 0 !important;
+    }
+
+    .border#{$infix}-bottom-0 {
+      border-bottom: 0 !important;
+    }
+
+    .border#{$infix}-left-0 {
+      border-left: 0 !important;
+    }
+
+    .border#{$infix}-x {
+      border-left-width: $border-width !important;
+      border-left-style: solid !important;
+      border-left-color: $border-color;
+      border-right-width: $border-width !important;
+      border-right-style: solid !important;
+      border-right-color: $border-color;
+    }
+
+    .border#{$infix}-y {
+      border-top-width: $border-width !important;
+      border-top-style: solid !important;
+      border-top-color: $border-color;
+      border-bottom-width: $border-width !important;
+      border-bottom-style: solid !important;
+      border-bottom-color: $border-color;
+    }
+  }
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .counter-gutter#{$infix} {
+      margin-left: ($grid-gutter-width * -0.5);
+      margin-right: ($grid-gutter-width * -0.5);
+    }
+
+    .counter-gutter#{$infix}-left {
+      margin-left: ($grid-gutter-width * -0.5);
+    }
+
+    .counter-gutter#{$infix}-right {
+      margin-right: ($grid-gutter-width * -0.5);
+    }
+  }
+}
+// responsive position
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .position-absolute#{$infix} {
+      position: absolute;
+    }
+    .position-relative#{$infix} {
+      position: relative;
+    }
+  }
+}
+.bg-black-10 {
+  background-color: rgba($black, .1) !important;
+}
+
+.bg-black-25 {
+  background-color: rgba($black, .25) !important;
+}
+
+.bg-black-50 {
+  background-color: rgba($black, .5) !important;
+}
+
+.bg-black-75 {
+  background-color: rgba($black, .75) !important;
+}
+
+.bg-black-90 {
+  background-color: rgba($black, .9) !important;
+}
+
+.bg-white-10 {
+  background-color: rgba($white, .1) !important;
+}
+
+.bg-white-25 {
+  background-color: rgba($white, .25) !important;
+}
+
+.bg-white-50 {
+  background-color: rgba($white, .5) !important;
+}
+
+.bg-white-75 {
+  background-color: rgba($white, .75) !important;
+}
+
+.bg-white-90 {
+  background-color: rgba($white, .9) !important;
+}
+
+.border-black-10 {
+  border-color: rgba($black, .1) !important;
+}
+
+.border-black-25 {
+  border-color: rgba($black, .25) !important;
+}
+
+.border-black-50 {
+  border-color: rgba($black, .5) !important;
+}
+
+.border-black-75 {
+  border-color: rgba($black, .75) !important;
+}
+
+.border-black-90 {
+  border-color: rgba($black, .9) !important;
+}
+
+.border-white-10 {
+  border-color: rgba($white, .1) !important;
+}
+
+.border-white-25 {
+  border-color: rgba($white, .25) !important;
+}
+
+.border-white-50 {
+  border-color: rgba($white, .5) !important;
+}
+
+.border-white-75 {
+  border-color: rgba($white, .75) !important;
+}
+
+.border-white-90 {
+  border-color: rgba($white, .9) !important;
+}
+
+.bg-gradient-dark {
+  background: $dark;
+  background: linear-gradient(45deg, darken($dark, 10%) 0, lighten($dark, 10%) 100%);
+}
+
+.bg-gradient-light {
+  background: $light;
+  background: linear-gradient(45deg, darken($light, 10%) 0, lighten($light, 10%) 100%);
+}
+
+.bg-gradient-primary {
+  background: $primary;
+  background: linear-gradient(45deg, darken($primary, 10%) 0, lighten($primary, 10%) 100%);
+}
+
+a {
+  font-weight: 600;
+}
+
+p a:not(.btn) {
+  text-decoration: underline;
+}
+
+.btn-link {
+  font-weight: 600;
+}
+
+.serif {
+  font-weight: 400;
+  font-family: 'Source Serif Pro';
+}
+
+.momentum-scrolling {
+  -webkit-overflow-scrolling: touch;
+}
+// this stops the dropdown menus being larger than the device window - but doesn't stop the dropdown-items from doing the same, see fix below.
+
+.dropdown-menu {
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+}
+// // links in drop downs do not wrap and can cause overflow issues on mobile when dropdown items are multiple words long. The downside with the fix below is that .dropdown-items will wrap too early unless a minimum width is assigned to the .dropdown-menu
+// .dropdown-item {
+//   white-space: normal;
+// }
+
+// dynamic collapse elements. Warning, bootstrap studio does not automatically apply the correct aria-expanded label to the collapse action
+
+a[data-toggle=collapse][aria-expanded=true],
+button[data-toggle=collapse][aria-expanded=true] {
+  // shown/hidden elements when open/closed
+  .show-when-open {
+      display: initial;
+  }
+  .show-when-closed {
+      display: none!important;
+  }
+  // animate chevron
+  .chevron {
+    transition-duration: 0.25s;
+    transition-property: transform;
+  }
+}
+
+a[data-toggle=collapse][aria-expanded=false],
+button[data-toggle=collapse][aria-expanded=false] {
+  .show-when-open {
+    display: none!important;
+  }
+  .show-when-closed {
+    display: initial;
+  }
+  .chevron {
+    transition-duration: 0.25s;
+    transition-property: transform;
+    transform: rotate(180deg);
+  }
+}

@@ -1,5 +1,7 @@
 // var theme = "wiley-online-library";
 var theme = "wiley-analytical-science";
+// var theme = "wiley-journals-app";
+// var theme = "hub--analytical-science";
 var gulp = require('gulp'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
