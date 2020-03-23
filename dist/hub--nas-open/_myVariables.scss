@@ -1,0 +1,22 @@
+$blue:    #005274;
+$indigo:  #61165E;
+$purple:  #440F42;
+$pink:    #D115C9;
+$red:     #A41022;
+$orange:  #db4b27;
+$yellow:  #B27A03;
+$green:   #068853;
+$teal:    #00E788;
+$cyan:    #006D76;
+
+$warning: $orange;
+
+$primary: #0a61a3;
+
+$theme-colors: (
+  "access-open": $indigo,
+  "access-free": $yellow,
+  "twitter":    #1da1f2,
+  "orcid":      #a6ce39,
+  "facebook":   #3b5998
+);
