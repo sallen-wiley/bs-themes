@@ -207,9 +207,10 @@ p a:not(.btn) {
 .momentum-scrolling {
   -webkit-overflow-scrolling: touch;
 }
-// this stops the dropdown menus being larger than the device window - but doesn't stop the dropdown-items from doing the same, see fix below.
 
-.dropdown-menu {
+// add dropdown content to its own width and height restricted DIV to stop the dropdown menus being larger than the device window - but doesn't stop the dropdown-items from doing the same, see fix below.
+
+.dropdown-menu-content {
   max-width: 90vw;
   max-height: 90vh;
   overflow: auto;
