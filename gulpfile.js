@@ -46,7 +46,7 @@ gulp.task('compile-' + theme, function() {
     .pipe(gulp.dest('dist/' + theme + '/'))
     .pipe(minifyCss())
     .pipe(gulp.dest('dist/' + theme + '/'))
-    .pipe(connect.reload())
+    .pipe(connect.reload());
 });
 
 gulp.task('html', function() {
