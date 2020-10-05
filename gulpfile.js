@@ -1,9 +1,9 @@
 // var theme = "wiley-online-library";
 // var theme = "wiley-analytical-science";
 // var theme = "wiley-journals-app";
-// var theme = "hub--analytical-science";
+var theme = "hub--analytical-science";
 // var theme = "hub--nas-open";
-var theme = "clib";
+// var theme = "clib";
 // var theme = "cp1";
 var gulp = require('gulp'),
   sass = require('gulp-sass'),

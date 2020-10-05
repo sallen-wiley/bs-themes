@@ -213,7 +213,13 @@ p a:not(.btn) {
   font-weight: 600;
 }
 .font-weight-black {
+  font-weight: 800;
   font-weight: 900;
+}
+
+// smaller font size - usually to obtain a 14px font sizes
+.smaller {
+  font-size: 87.5%;
 }
 
 // add dropdown content to its own width and height restricted DIV to stop the dropdown menus being larger than the device window - but doesn't stop the dropdown-items from doing the same, see fix below.
