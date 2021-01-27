@@ -1,4 +1,4 @@
-// var theme = "wiley-online-library";
+var theme = "wiley-online-library";
 // var theme = "wiley-analytical-science";
 // var theme = "wiley-journals-app";
 // var theme = "hub--analytical-science";
@@ -6,7 +6,7 @@
 // var theme = "clib";
 // var theme = "cp1";
 // var theme = "was";
-var theme = "wji";
+// var theme = "wji";
 var gulp = require('gulp'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),

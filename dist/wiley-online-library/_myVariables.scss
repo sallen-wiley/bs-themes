@@ -9,6 +9,8 @@ $green:   #068853;
 $teal:    #00E788;
 $cyan:    #006D76;
 
+$black: #000000;
+
 $warning: $orange;
 
 $theme-colors: (
@@ -31,3 +33,7 @@ $theme-colors: (
   "dom-light-red": #d3033d,
   "dom-dark-red": #290403
 );
+
+$box-shadow-sm:               0 0 .25rem rgba($black, .3);
+$box-shadow:                  0 0 1rem rgba($black, .35);
+$box-shadow-lg:               0 0 3rem rgba($black, .4);
