@@ -66,7 +66,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', ['default', 'connect'], function() {
-  gulp.watch(['dist/' + theme + '/*.scss'], ['compile-' + theme]);
+  gulp.watch(['./**/*.scss'], ['compile-' + theme]);
   gulp.watch(['./*.html'], ['html']);
 });
 

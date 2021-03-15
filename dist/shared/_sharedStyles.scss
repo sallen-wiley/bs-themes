@@ -239,10 +239,6 @@ a {
   font-weight: 600;
 }
 
-p a:not(.btn) {
-  text-decoration: underline;
-}
-
 .btn-link {
   font-weight: 600;
 }
@@ -254,6 +250,12 @@ p a:not(.btn) {
 
 .momentum-scrolling {
   -webkit-overflow-scrolling: touch;
+}
+
+// underline links inside elements
+
+.text-underline-links a:not(.btn) {
+  text-decoration: underline;
 }
 
 // more font weights
