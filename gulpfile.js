@@ -3,10 +3,10 @@
 // var theme = "wiley-journals-app";
 // var theme = "hub--analytical-science";
 // var theme = "hub--nas-open";
-// var theme = "clib";
+var theme = "clib";
 // var theme = "cp1";
 // var theme = "was";
-var theme = "wji";
+// var theme = "wji";
 var gulp = require('gulp'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
